@@ -1,0 +1,85 @@
+# Campuslands CliNode
+
+Aplicación de terminal desarrollada con Node.js para gestionar el registro de campers de Campuslands mediante una interfaz de línea de comandos (CLI).
+
+## Descripción
+
+**Campuslands CliNode** permite registrar y consultar información básica de los campers desde la terminal.
+
+Al registrar un camper, la aplicación almacena:
+
+- Nombre del camper
+- Stack tecnológico asignado por defecto
+- ID generado automáticamente
+- Fecha y hora de creación del registro
+
+Al realizar el primer registro, la aplicación crea automáticamente el archivo `campers.json` dentro de la carpeta `data`. Este archivo funciona como una base de datos temporal, donde se almacenan los registros de los campers en formato JSON.
+
+## Estructura del proyecto
+
+```
+📁 campuslands
+├── 📁 data
+│   ├── .gitkeep
+│   └── campers.json
+│
+├── 📁 src
+│   ├── campers.js
+│   ├── index.js
+│   └── interactivo.js
+│
+└── package.json
+```
+
+### `data`
+
+Contiene los archivos utilizados para almacenar la información de los campers.
+
+- **`campers.json`**: almacena los registros de los campers en formato JSON.
+- **`.gitkeep`**: permite mantener la carpeta `data` dentro del repositorio cuando todavía no existen datos.
+
+### `src`
+
+Contiene los archivos principales de la aplicación.
+
+- **`campers.js`**: contiene la lógica principal de la aplicación y las funciones encargadas de registrar, listar y buscar campers.
+- **`index.js`**: importa las funciones de `campers.js` y permite ejecutar las operaciones principales desde la terminal.
+- **`interactivo.js`**: contiene una versión interactiva de la aplicación utilizando `readline`, proporcionando un menú para facilitar la interacción con el usuario.
+
+### `package.json`
+
+Contiene la información y configuración básica del proyecto, incluyendo las dependencias y los scripts necesarios para ejecutar la aplicación.
+
+##  Tecnologías utilizadas
+
+- Node.js
+- JavaScript
+- JSON
+- Readline (módulo nativo de Node.js)
+
+
+##  Almacenamiento de datos
+
+Los datos se almacenan temporalmente en:
+
+```
+data/campers.json
+```
+
+La aplicación genera automáticamente este archivo cuando se realiza el primer registro, evitando la necesidad de configurar una base de datos externa.
+
+##  Funcionalidades
+
+Actualmente, la aplicación permite:
+
+- [x] Registrar campers
+- [x] Generar un ID automáticamente
+- [x] Registrar la fecha de creación
+- [x] Asignar un stack tecnológico por defecto
+- [x] Listar campers registrados
+- [x] Buscar campers
+- [x] Almacenar la información en un archivo JSON
+- [x] Interactuar mediante un menú en la terminal
+
+## 👨‍💻 Autor
+Jos-langL
