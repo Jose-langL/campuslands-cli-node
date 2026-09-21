@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "Joselo",
+    "stack": "JavaScript",
+    "creadoEn": "21/9/2026"
+  },
+  {
+    "id": 2,
+    "nombre": "Sofi",
+    "stack": "JavaScript",
+    "creadoEn": "21/9/2026"
+  },
+  {
+    "id": 3,
+    "nombre": "Juan",
+    "stack": "Python",
+    "creadoEn": "21/9/2026"
+  }
+]
